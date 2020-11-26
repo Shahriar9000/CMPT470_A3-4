@@ -1,0 +1,122 @@
+body {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 16px;
+
+ }
+
+ body > header {
+    background-color: rgb(45, 50, 70);
+    display: block;
+    width: auto;
+    height: 100px;
+	font-weight: bold;
+	text-align: center;
+ }
+
+ h1
+{
+  display: inline-block;
+  text-align: center;
+}
+
+#User_Info
+{
+	width: 45%;
+	margin: 10px;
+	float:left;
+	font-size: 22px;
+	background: #f5f5f5;
+}
+
+#User_Info input[type = date], input[type = textbox], input[type = email], input[type = number]
+{
+	width: 75%;
+	font-size: 15px;
+}
+
+#User_Info button
+{	
+	margin-top: 20px;
+	margin-left: 40px;
+	height: 40px;
+	width: 50%;
+	margin: 10px
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.Sort_Button_container
+{
+	width: 80%;
+	text-align: center;
+}
+
+.average_age
+{	
+	font-size: 20px;
+	float:left;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.Sort_buttons
+{
+	width: 30%;
+	position: relative;
+	float:left;
+}
+
+.Sort_buttons button
+{
+	position: relative;
+	height: 40px;
+	width: 80%;
+	font-size: 16px;
+	margin: 5px;
+}
+
+.button-container form,
+.button-container form div {
+    display: inline;
+}
+
+.button-container button {
+    display: inline;
+    vertical-align: middle;
+}
+
+
+.Table_container 
+{
+
+	clear:both;
+}
+
+.Table_container > h2
+{
+	margin-top: 20px;
+	text-align: left;
+}
+
+.Table_container #Table
+{
+	width: 100%;
+	border: 1px solid black;
+}
+
+.Table_container #Table tr th
+{
+	border-right: 1px solid black;
+}
+
+h.Table_container #Table tr td
+{
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+
+tr:hover {background-color: #f5f5f5;}

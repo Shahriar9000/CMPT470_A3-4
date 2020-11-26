@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+
+<!-- Reference: https://www.w3schools.com/bootstrap/default.asp-->
+	<head>
+		<!-- Required meta tags -->
+		<title>Assignment 3&4</title>
+		<meta charset = "utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type = "text/CSS" href = "../public/webpage.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+        <script type="text/javascript" src="webpage.js"></script>
+		<header>
+            <h1 class="heading-1" style="color:coral">Rectangle Display </h1>
+        </header>
+        
+
+        <nav class="navbar navbar-expand-lg navbar-inverse"; style="color:#e8eaf3; font-weight: bold; font-size: medium; text-align: center;">
+            <ul class="nav navbar-nav">
+            <li><a class="nav-link" href='Display.html'><strong>Display</strong></a></li>
+                <li><a class="nav-link" href='add.html'><strong>Add</strong></a></li>
+              <li><a class="nav-link" href="update.html">Update</a></li>
+              <li><a  class="nav-link" href="delete.html">Delete</a></li>
+              
+
+            </ul>
+            
+          </nav>
+
+		<div class="container">
+            <div class="row">
+                <!-- Update rectangle form -->
+                <div class="col-sm-6">
+                    <h2 style="font-weight: bold;">Update Rectangle</h2>
+                    <form onsubmit="update_rectangle()">
+                        <div class="form-group">
+                            <label for="update-id">ID:</label><br>
+                            <input type="number" class="form-control" id="id" onkeypress="return event.charCode >= 48" min="1" required><br>
+        
+                            <label for="update-width">Width:</label><br>
+                            <input type="number" class="form-control" id="width" onkeypress="return event.charCode >= 48" min="1" required><br>
+        
+                            <label for="update-height">Height:</label><br>
+                            <input type="number" class="form-control" id="height" onkeypress="return event.charCode >= 48" min="1" required><br>
+        
+                            <label for="update-color">Color:</label><br>
+                            <input type="color" class="form-control col-2" id="color" required><br>
+
+                            <input class="btn btn-dark" type="submit" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</body>           
+
+</html>
